@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home :)</title>
-  <script type="module" crossorigin src="/Per_OutTaiwan/assets/main-DqGoUD5y.js"></script>
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/vendor-Bsgzf06I.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/vue-vendor-CJvSAjNs.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/three-DQbwDAWq.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/index-C6aJeBil.js">
-  <link rel="stylesheet" crossorigin href="/Per_OutTaiwan/assets/index-DuTTkkqd.css">
-  <link rel="stylesheet" crossorigin href="/Per_OutTaiwan/assets/main-Bzwsav0n.css">
+    <meta name="theme-color" content="#050816">
+    <meta name="description" content="Per OutTaiwan 多功能工具集合與任務控制台">
+    <title>Per OutTaiwan｜多功能工具控制台</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('darkMode');
+        const isDark = savedTheme === null
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : savedTheme === 'true';
+        document.documentElement.classList.toggle('dark', isDark);
+      } catch (error) {
+        console.warn('Unable to restore the saved color theme.', error);
+      }
+    </script>
+  <script type="module" crossorigin src="/Per_OutTools/assets/main-Dyi6olS0.js"></script>
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/vue-vendor-CJvUEO8z.js">
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/three-GkjKvAHA.js">
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/layout-Ceycnx3X.js">
+  <link rel="stylesheet" crossorigin href="/Per_OutTools/assets/layout-OBq0A095.css">
+  <link rel="stylesheet" crossorigin href="/Per_OutTools/assets/main-DHUFEBzX.css">
 </head>
 
 <body>

@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OutTaiwan - 打包清單</title>
-  <script type="module" crossorigin src="/Per_OutTaiwan/assets/takelist-s6j7iz5w.js"></script>
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/vendor-Bsgzf06I.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/vue-vendor-CJvSAjNs.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/three-DQbwDAWq.js">
-  <link rel="modulepreload" crossorigin href="/Per_OutTaiwan/assets/index-C6aJeBil.js">
-  <link rel="stylesheet" crossorigin href="/Per_OutTaiwan/assets/index-DuTTkkqd.css">
-  <link rel="stylesheet" crossorigin href="/Per_OutTaiwan/assets/takelist-DDxKr7bv.css">
+    <meta name="theme-color" content="#050816">
+    <meta name="description" content="依目的地與旅客類型建立可持續保存的旅行打包清單">
+    <title>打包清單｜Per OutTaiwan</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('darkMode');
+        const isDark = savedTheme === null
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : savedTheme === 'true';
+        document.documentElement.classList.toggle('dark', isDark);
+      } catch (error) {
+        console.warn('Unable to restore the saved color theme.', error);
+      }
+    </script>
+  <script type="module" crossorigin src="/Per_OutTools/assets/takelist-DAmA6thD.js"></script>
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/vue-vendor-CJvUEO8z.js">
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/three-GkjKvAHA.js">
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/layout-Ceycnx3X.js">
+  <link rel="modulepreload" crossorigin href="/Per_OutTools/assets/useDialogFocus-fl-t6tVL.js">
+  <link rel="stylesheet" crossorigin href="/Per_OutTools/assets/layout-OBq0A095.css">
+  <link rel="stylesheet" crossorigin href="/Per_OutTools/assets/takelist-Djdtbuf3.css">
 </head>
 <body>
     <div id="app"></div>
